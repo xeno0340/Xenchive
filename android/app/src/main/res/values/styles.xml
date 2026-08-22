@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========== SPLASH / LAUNCH THEME ========== -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Background used while Flutter initializes -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+
+        <!-- Prevent auto dark overlay on splash -->
+        <item name="android:forceDarkAllowed">false</item>
+
+        <!-- Enable full edge-to-edge -->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <!-- Transparent bars -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Disable contrast overlays (fixes black strip on many OEMs) -->
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+
+    <!-- ========== NORMAL / RUNTIME THEME ========== -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Match Flutter background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- Full edge-to-edge and cutout support -->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <!-- Transparent status & nav bars -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Prevent OEM contrast layers (main black strip fix) -->
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+
+        <!-- Allow Flutter to render under the bars -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- Optional: removes flicker on startup background -->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+</resources>

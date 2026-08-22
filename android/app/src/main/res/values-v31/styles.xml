@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ==================== ANDROID 12+ SPLASH / LAUNCH THEME ==================== -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Android 12 splashscreen API -->
+        <item name="android:windowSplashScreenBackground">#0B1A30</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/android12splash</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">#0B1A30</item>
+
+        <!-- Don’t auto-darken the splash -->
+        <item name="android:forceDarkAllowed">false</item>
+
+        <!-- Edge-to-edge ready -->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Fully transparent bars on the splash -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Kill OEM contrast overlays that cause black nav/status bands -->
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+
+    <!-- ==================== RUNTIME THEME (AFTER FLUTTER STARTS) ==================== -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Let Flutter paint everything behind system bars -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- Edge-to-edge & cutouts -->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Transparent system bars during app runtime -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Prevent contrast layers (common source of the “black bottom bar”) -->
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+
+</resources>

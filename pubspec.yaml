@@ -1,0 +1,90 @@
+name: xenchive
+description: "XENCHIVE – Xperience Next-Gen Centralized Higher-Institution Vault & Evidence."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.4.3
+  firebase_storage: ^12.3.0
+  cloud_functions: ^5.6.2
+
+  # UI / UX and utilities
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.8
+  fl_chart: ^1.1.1
+  lottie: ^3.1.2
+  flutter_animate: ^4.5.0
+  file_picker: ^8.1.2
+  responsive_framework: ^1.4.0
+  url_launcher: ^6.3.0
+  intl: ^0.19.0
+  pdfx: ^2.5.0
+  go_router: ^14.2.3
+  flutter_riverpod: ^3.0.0-dev.3
+
+  # Hashing / models
+  crypto: ^3.0.5
+  json_annotation: ^4.9.0
+  http: ^1.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.8
+  json_serializable: ^6.8.0
+
+  # Generators
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/animations/
+
+  # If these font files don't exist yet, comment this whole block to avoid build errors.
+  fonts:
+    - family: Plus Jakarta Sans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+        - asset: assets/fonts/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/PlusJakartaSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlusJakartaSans-Bold.ttf
+          weight: 700
+
+# -------- App Icon (uses assets/images/1.png) --------
+flutter_icons:
+  android: true
+  ios: true
+  image_path: assets/images/1.png
+  adaptive_icon_background: "#0B1A30"   # Midnight Blue
+  adaptive_icon_foreground: assets/images/1.png
+
+# -------- Splash Screen (Academic Noir) --------
+flutter_native_splash:
+  color: "#0B1A30"
+  image: assets/images/1.png
+  color_dark: "#0A0F16"
+  image_dark: assets/images/1.png
+  android_12:
+    icon_background_color: "#0B1A30"
+    icon_background_color_dark: "#0A0F16"
+    image: assets/images/1.png
+    image_dark: assets/images/1.png
+  web: false

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "176930213940",
+    "project_id": "xenchive-2f82b",
+    "storage_bucket": "xenchive-2f82b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176930213940:android:2442ea1be7d476cfef3a61",
+        "android_client_info": {
+          "package_name": "com.example.xenchive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSsUNDro2eCQbxx8p04ojivwnhW_q0L_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

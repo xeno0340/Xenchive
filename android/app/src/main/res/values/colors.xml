@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <!-- optional brand colors if you want -->
+    <color name="xenchive_primary">#0B1A30</color>
+    <color name="xenchive_accent">#CBA135</color>
+</resources>
